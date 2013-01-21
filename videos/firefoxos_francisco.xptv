@@ -1,0 +1,136 @@
+<pitivi formatter="etree" version="0.1">
+  <export-settings aencoder="vorbisenc" audiochannels="2" audiodepth="16" audiorate="48000" muxer="webmmux" render-scale="100" vencoder="vp8enc" videoheight="576" videopar-denom="15" videopar-num="16" videorate-denom="1" videorate-num="25" videowidth="720" />
+  <metadata author="Ana Rey" name="Proyecto nuevo" year="2013" />
+  <factories>
+    <sources>
+      <source default_duration="1791056000000" duration="1791056000000" filename="file:///home/anarey/V%C3%ADdeos/video-Firefoxos/M2U00098.MPG" id="0" type="pitivi.factories.file.FileSourceFactory">
+        <input-streams />
+        <output-streams>
+          <stream caps="video/x-raw-yuv, format=(fourcc)I420, width=(int)720, height=(int)576, pixel-aspect-ratio=(fraction)64/45, framerate=(fraction)25/1, interlaced=(boolean)true" id="1" name="src0" type="pitivi.stream.VideoStream" />
+          <stream caps="audio/x-raw-float, endianness=(int)1234, width=(int)32, channels=(int)2, rate=(int)48000, channel-positions=(GstAudioChannelPosition)&lt; GST_AUDIO_CHANNEL_POSITION_FRONT_LEFT, GST_AUDIO_CHANNEL_POSITION_FRONT_RIGHT &gt;" id="2" name="src1" type="pitivi.stream.AudioStream" />
+        </output-streams>
+      </source>
+      <source default_duration="1423568000000" duration="1423568000000" filename="file:///home/anarey/V%C3%ADdeos/video-Firefoxos/M2U00099.MPG" id="3" type="pitivi.factories.file.FileSourceFactory">
+        <input-streams />
+        <output-streams>
+          <stream caps="video/x-raw-yuv, format=(fourcc)I420, width=(int)720, height=(int)576, pixel-aspect-ratio=(fraction)64/45, framerate=(fraction)25/1, interlaced=(boolean)true" id="4" name="src0" type="pitivi.stream.VideoStream" />
+          <stream caps="audio/x-raw-float, endianness=(int)1234, width=(int)32, channels=(int)2, rate=(int)48000, channel-positions=(GstAudioChannelPosition)&lt; GST_AUDIO_CHANNEL_POSITION_FRONT_LEFT, GST_AUDIO_CHANNEL_POSITION_FRONT_RIGHT &gt;" id="5" name="src1" type="pitivi.stream.AudioStream" />
+        </output-streams>
+      </source>
+      <source default_duration="5000000000" duration="18446744073709551615" filename="file:///home/anarey/git/sugus-asociacion/cortinilla_firefoxos.png" id="6" type="pitivi.factories.file.PictureFileSourceFactory">
+        <input-streams />
+        <output-streams>
+          <stream caps="video/x-raw-rgb, width=(int)720, height=(int)576, bpp=(int)32, framerate=(fraction)0/1, depth=(int)32, endianness=(int)4321, red_mask=(int)-16777216, green_mask=(int)16711680, blue_mask=(int)65280, alpha_mask=(int)255" id="7" name="src0" type="pitivi.stream.VideoStream" />
+        </output-streams>
+      </source>
+      <source default_duration="5000000000" duration="18446744073709551615" filename="file:///home/anarey/git/sugus-asociacion/trasera.png" id="8" type="pitivi.factories.file.PictureFileSourceFactory">
+        <input-streams />
+        <output-streams>
+          <stream caps="video/x-raw-rgb, width=(int)720, height=(int)576, bpp=(int)32, framerate=(fraction)0/1, depth=(int)32, endianness=(int)4321, red_mask=(int)-16777216, green_mask=(int)16711680, blue_mask=(int)65280, alpha_mask=(int)255" id="9" name="src0" type="pitivi.stream.VideoStream" />
+        </output-streams>
+      </source>
+    </sources>
+  </factories>
+  <timeline>
+    <tracks>
+      <track>
+        <stream caps="video/x-raw-yuv, width=(int)720, height=(int)576, pixel-aspect-ratio=(fraction)16/15, framerate=(fraction)25/1, format=(fourcc)I420" id="10" name="None" type="pitivi.stream.VideoStream" />
+        <track-objects>
+          <track-object active="(bool)True" duration="(gint64)5000000000" id="11" in_point="(gint64)0" media_duration="(gint64)5000000000" priority="(int)1" start="(gint64)0" type="pitivi.timeline.track.SourceTrackObject">
+            <factory-ref id="6" />
+            <stream-ref id="7" />
+            <curves>
+              <curve property="alpha" type="gdouble" version="1">
+                <start mode="2" value="(gdouble)1.0" />
+                <end mode="2" value="(gdouble)1.0" />
+              </curve>
+            </curves>
+          </track-object>
+          <track-object active="(bool)True" duration="(gint64)1488762110259" id="12" in_point="(gint64)302293889741" media_duration="(gint64)1488762110259" priority="(int)1" start="(gint64)5000000000" type="pitivi.timeline.track.SourceTrackObject">
+            <factory-ref id="0" />
+            <stream-ref id="1" />
+            <curves>
+              <curve property="alpha" type="gdouble" version="1">
+                <start mode="2" value="(gdouble)1.0" />
+                <end mode="2" value="(gdouble)1.0" />
+              </curve>
+            </curves>
+          </track-object>
+          <track-object active="(bool)True" duration="(gint64)1010966354100" id="13" in_point="(gint64)0" media_duration="(gint64)1010966354100" priority="(int)1" start="(gint64)1493762110259" type="pitivi.timeline.track.SourceTrackObject">
+            <factory-ref id="3" />
+            <stream-ref id="4" />
+            <curves>
+              <curve property="alpha" type="gdouble" version="1">
+                <start mode="2" value="(gdouble)1.0" />
+                <end mode="2" value="(gdouble)1.0" />
+              </curve>
+            </curves>
+          </track-object>
+          <track-object active="(bool)True" duration="(gint64)5000000000" id="14" in_point="(gint64)0" media_duration="(gint64)5000000000" priority="(int)1" start="(gint64)2504728464359" type="pitivi.timeline.track.SourceTrackObject">
+            <factory-ref id="8" />
+            <stream-ref id="9" />
+            <curves>
+              <curve property="alpha" type="gdouble" version="1">
+                <start mode="2" value="(gdouble)1.0" />
+                <end mode="2" value="(gdouble)1.0" />
+              </curve>
+            </curves>
+          </track-object>
+        </track-objects>
+      </track>
+      <track>
+        <stream caps="audio/x-raw-int, rate=(int)44100, channels=(int)2; audio/x-raw-float, rate=(int)44100, channels=(int)2" id="15" name="None" type="pitivi.stream.AudioStream" />
+        <track-objects>
+          <track-object active="(bool)True" duration="(gint64)1488762110259" id="16" in_point="(gint64)302293889741" media_duration="(gint64)1488762110259" priority="(int)1" start="(gint64)5000000000" type="pitivi.timeline.track.SourceTrackObject">
+            <factory-ref id="0" />
+            <stream-ref id="2" />
+            <curves>
+              <curve property="volume" type="gdouble" version="1">
+                <start mode="2" value="(gdouble)1.0" />
+                <end mode="2" value="(gdouble)1.0" />
+              </curve>
+            </curves>
+          </track-object>
+          <track-object active="(bool)True" duration="(gint64)1010966354100" id="17" in_point="(gint64)0" media_duration="(gint64)1010966354100" priority="(int)1" start="(gint64)1493762110259" type="pitivi.timeline.track.SourceTrackObject">
+            <factory-ref id="3" />
+            <stream-ref id="5" />
+            <curves>
+              <curve property="volume" type="gdouble" version="1">
+                <start mode="2" value="(gdouble)1.0" />
+                <end mode="2" value="(gdouble)1.0" />
+              </curve>
+            </curves>
+          </track-object>
+        </track-objects>
+      </track>
+    </tracks>
+    <timeline-objects>
+      <timeline-object>
+        <factory-ref id="6" />
+        <track-object-refs>
+          <track-object-ref id="11" />
+        </track-object-refs>
+      </timeline-object>
+      <timeline-object>
+        <factory-ref id="0" />
+        <track-object-refs>
+          <track-object-ref id="16" />
+          <track-object-ref id="12" />
+        </track-object-refs>
+      </timeline-object>
+      <timeline-object>
+        <factory-ref id="3" />
+        <track-object-refs>
+          <track-object-ref id="13" />
+          <track-object-ref id="17" />
+        </track-object-refs>
+      </timeline-object>
+      <timeline-object>
+        <factory-ref id="8" />
+        <track-object-refs>
+          <track-object-ref id="14" />
+        </track-object-refs>
+      </timeline-object>
+    </timeline-objects>
+  </timeline>
+</pitivi>
